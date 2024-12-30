@@ -1,7 +1,15 @@
 <template>
   <v-navigation-drawer v-model="sidebarStore.isOpen" color="background">
-    <v-list-item link :to="Routes.docs" @click.stop> Introduction </v-list-item>
-    <v-list>
+    <v-skeleton-loader
+      v-if="!mdDocs.length"
+      type="list-item-two-line"
+      :height="'50px'"
+    />
+
+    <v-list v-if="mdDocs.length">
+      <v-list-item link :to="Routes.docs" @click.stop>
+        Introduction
+      </v-list-item>
       <v-list-group
         v-for="(nav, index) in mdDocs"
         :key="index"
@@ -40,7 +48,7 @@ const fetchDocs = async () => {
   const filtered = navigation
     .value!.filter((nav) => nav._path.includes("docs"))
     .map((nav) => nav.children)[0] as NavItem[];
-  mdDocs.value = toRaw(filtered).filter(nav => nav._path !== '/docs')
+  mdDocs.value = toRaw(filtered).filter((nav) => nav._path !== "/docs");
   mdDocs.value.forEach((nav) => {
     nav.isOpen = false;
   });
