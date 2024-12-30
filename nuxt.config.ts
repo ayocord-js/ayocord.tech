@@ -7,6 +7,22 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: "icon", href: "/logo.svg" }],
       title: "ayocord",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Ayocord is a Discord.js framework based on decorators and typescript",
+        },
+        { property: "og:title", content: "Ayocord" },
+        {
+          property: "og:description",
+          content:
+            "Ayocord is a Discord.js framework based on decorators and typescript",
+        },
+        { property: "og:image", content: "https://www.ayocord.tech/logo.svg" },
+        { property: "og:url", content: "https://www.ayocord.tech/" },
+        { property: "og:type", content: "website" },
+      ],
     },
     pageTransition: { name: "page", mode: "in-out" },
   },
@@ -32,7 +48,7 @@ export default defineNuxtConfig({
       theme: "github-dark",
     },
     markdown: {
-      anchorLinks: false
+      anchorLinks: false,
     },
     sources: {
       content: {
