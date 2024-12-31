@@ -1,13 +1,32 @@
 <template>
   <NuxtLayout class="text-text" name="documentation">
-    <ContentDoc v-slot="{ doc }">
-      <ContentRendererMarkdown :value="doc" class="prose" />
-    </ContentDoc>
+    <ContentDoc :doc="doc" class="prose"></ContentDoc>
   </NuxtLayout>
   <NuxtPage />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+const doc = ref<any>();
+
+async function fetchDoc() {
+  const slug = route.params.slug;
+  const params = slug
+    ? (slug as string[]).map((key) => key + "/").join("")
+    : null;
+  const { data } = await useAsyncData(() =>
+    queryContent(`/docs${params ? "/" + params : ""}`).findOne()
+  );
+  doc.value = data;
+}
+
+onMounted(() => {
+  fetchDoc();
+});
+</script>
 
 <style scoped>
 .not-found {

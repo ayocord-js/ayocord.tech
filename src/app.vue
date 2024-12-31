@@ -4,6 +4,6 @@ import "./global.css";
 
 <template>
   <v-app>
-    <RouterView></RouterView>
+    <NuxtPage />
   </v-app>
 </template>

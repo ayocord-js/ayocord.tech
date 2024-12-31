@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   },
 
   css: ["vuetify/styles", "~/global.css"],
-  ssr: true,
+  ssr: false,
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
   srcDir: "./src",
@@ -52,7 +52,6 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   content: {
-    documentDriven: true,
     highlight: {
       theme: "github-dark",
     },
