@@ -34,7 +34,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-    pageTransition: { name: "page", mode: "in-out" },
   },
   postcss: {
     plugins: {
@@ -44,7 +43,7 @@ export default defineNuxtConfig({
   },
 
   css: ["vuetify/styles", "~/global.css"],
-  ssr: false,
+  ssr: true,
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
   srcDir: "./src",
