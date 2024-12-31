@@ -18,7 +18,7 @@ module.exports = {
                 fontSize: "1.5rem", 
               },
               "@screen md": {
-                fontSize: "2rem", // Размер для планшетов
+                fontSize: "2rem", 
               },
             },
             h2: {
@@ -28,11 +28,11 @@ module.exports = {
                 fontSize: "1.25rem",
               },
               "@screen md": {
-                fontSize: "1.75rem", // Размер для планшетов
+                fontSize: "1.75rem", 
               },
             },
             strong: {
-              color: "#E2DFDF",
+              color: "#FFFFFF",
             },
             h3: {
               color: "#E2DFDF",
@@ -41,7 +41,7 @@ module.exports = {
                 fontSize: "1.125rem",
               },
               "@screen md": {
-                fontSize: "1.5rem", // Размер для планшетов
+                fontSize: "1.5rem", 
               },
             },
             blockquote: {
@@ -52,7 +52,7 @@ module.exports = {
                 fontSize: "1rem", 
               },
               "@screen md": {
-                fontSize: "1.125rem", // Размер для планшетов
+                fontSize: "1.125rem",
               },
             },
             code: {
