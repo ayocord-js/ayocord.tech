@@ -78,7 +78,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@pinia/nuxt",
-    //...
   ],
   vite: {
     vue: {

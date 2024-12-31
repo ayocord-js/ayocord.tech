@@ -1,6 +1,6 @@
 export const Routes = {
   main: "/",
   reference: "/reference/",
-  docs: "/docs/",
+  docs: "/docs",
   source: "https://github.com/Ayomits/ayocord",
 };

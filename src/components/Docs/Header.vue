@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar class="opacity-90 text-text" color="#6584FF" elevation="0">
+  <v-app-bar class="opacity-100 text-text" color="#6584FF" elevation="0">
     <div class="flex sticky w-full items-center max-w-[90%] justify-between">
       <div class="flex items-center gap-[20px]">
         <v-btn

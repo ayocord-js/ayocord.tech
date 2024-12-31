@@ -1,11 +1,9 @@
 <template>
-  <v-app>
-    <DocsHeader class="uppercase sticky" />
-    <DocsSidebar />
-    <DocsMarkDown>
-      <slot />
-    </DocsMarkDown>
-  </v-app>
+  <DocsHeader class="uppercase" />
+  <DocsSidebar />
+  <DocsMarkDown>
+    <slot />
+  </DocsMarkDown>
 </template>
 
 <script lang="ts" setup></script>

@@ -28,13 +28,16 @@
         </div>
       </div>
     </div>
-    <NuxtPage />
   </NuxtLayout>
+  <NuxtPage />
 </template>
 
 <script lang="ts" setup>
-import { navigateTo } from "nuxt/app";
-import { Routes } from "../utils/Routes";
+
+definePageMeta({
+  title: "Ayocord main page",
+  description: "The best framework"
+})
 
 const buttons = [
   { name: "Docs", link: Routes.docs },
