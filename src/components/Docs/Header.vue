@@ -10,7 +10,7 @@
           color="white"
         ></v-btn>
         <NuxtLink
-          class="hidden md:block flex items-center text-text gap-4"
+          class="flex items-center text-text gap-4"
           :to="Routes.main"
         >
           <IconsLogo width="65" />

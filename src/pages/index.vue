@@ -1,43 +1,42 @@
 <template>
-  <NuxtLayout>
-    <div
-      class="flex items-center text-text font-bold select-none no-copy cursor-default justify-center h-screen px-4 sm:px-0"
-    >
-      <IconsLogo class="hidden mx-10 sm:block" width="350" />
+  <div
+    class="flex items-center text-text font-bold select-none no-copy cursor-default justify-center h-screen px-4 sm:px-0"
+  >
+    <IconsLogo class="hidden mx-10 sm:block" width="350" />
 
-      <div
-        class="flex flex-col items-center justify-center text-center sm:gap-2"
-      >
-        <h2 class="text-3xl sm:text-5xl font-semibold text-gradient glow-text">
-          Ayocord
-        </h2>
-        <p class="text-lg text-text opacity-80 sm:text-xl">
-          Simplify development with ayocord.
-        </p>
-        <div
-          class="flex cursor-pointer flex-wrap justify-center gap-1 sm:gap-1"
-        >
-          <MainButton v-for="(button, index) in buttons" :key="index"
-          :button="button" @click="navigateTo(button.link, { external:
-          button.name.toLowerCase() === 'source' })
-          " />
-        </div>
-        <div class="flex space-x-1 opacity-60">
-          <p>&copy Thx for design my friend</p>
-          <a class="text-primary" href="https://t.me/pvashkaa">@pvashkaa</a>
-        </div>
+    <div class="flex flex-col items-center justify-center text-center sm:gap-2">
+      <h2 class="text-3xl sm:text-5xl font-semibold text-gradient glow-text">
+        Ayocord
+      </h2>
+      <p class="text-lg text-text opacity-80 sm:text-xl">
+        Simplify development with ayocord.
+      </p>
+      <div class="flex cursor-pointer flex-wrap justify-center gap-1 sm:gap-1">
+        <MainButton
+          v-for="(button, index) in buttons"
+          :key="index"
+          :button="button"
+          @click="
+            navigateTo(button.link, {
+              external: button.name.toLowerCase() === 'source',
+            })
+          "
+        />
+      </div>
+      <div class="flex space-x-1 opacity-60">
+        <p>&copy Thx for design my friend</p>
+        <a class="text-primary" href="https://t.me/pvashkaa">@pvashkaa</a>
       </div>
     </div>
-  </NuxtLayout>
+  </div>
   <NuxtPage />
 </template>
 
 <script lang="ts" setup>
-
 definePageMeta({
   title: "Ayocord main page",
-  description: "The best framework"
-})
+  description: "The best framework",
+});
 
 const buttons = [
   { name: "Docs", link: Routes.docs },

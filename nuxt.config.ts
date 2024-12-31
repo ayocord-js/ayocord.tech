@@ -52,7 +52,6 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   content: {
-    defaultLocale: "./content",
     documentDriven: true,
     highlight: {
       theme: "github-dark",
@@ -63,7 +62,7 @@ export default defineNuxtConfig({
     sources: {
       content: {
         driver: "fs",
-        prefix: "/docs",
+        prefix: "/docs/",
         base: resolve(__dirname, "content"),
       },
     },
