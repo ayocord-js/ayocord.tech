@@ -19,6 +19,11 @@ export default defineNuxtConfig({
           content:
             "Ayocord is a Discord.js framework based on decorators and typescript",
         },
+        {
+          name: "keywords",
+          content:
+            "ayocord, айокорд, библиотека для дискорд, js, ts, тайпскрипт, джаваскрипт, жабаскрипт, discord, discord.js, framework, фреймворк, дискорд джс, discord.ts, tsx, jsx, react, vue, angular, next, nuxt, css, scss, c++, one piece, hunterxhuntex, гайд, guide, community, комьюнити, developer, девелопер, программирование, programing, language, язык, programmer, програмист",
+        },
         { property: "og:image", content: "https://www.ayocord.tech/logo.svg" },
         { property: "og:url", content: "https://www.ayocord.tech/" },
         { property: "og:type", content: "website" },
