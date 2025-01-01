@@ -30,7 +30,7 @@ There's just usefull and short information with some examples. You can contribut
 - - [x] Events
 - - [x] Slash Commands
 - - [x] Text Commands
-- - [ ] Components
+- - [x] Components
 - Utils
 - - [ ] Slash command utility
 - - [ ] Module utility
