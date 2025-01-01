@@ -31,6 +31,8 @@ There's just usefull and short information with some examples. You can contribut
 - - [x] Slash Commands
 - - [x] Text Commands
 - - [x] Components
+- - [x] SubCommands
+- - [x] AutoComplete
 - Utils
 - - [ ] Slash command utility
 - - [ ] Module utility
@@ -38,8 +40,8 @@ There's just usefull and short information with some examples. You can contribut
 - - [ ] Config utility
 - - [ ] Discohook utility
 - Guard
-- - [ ] What's it
-- - [ ] Usage
+- - [x] What's it
+- - [x] Usage
 - Advanced
 - - [ ] Module management
 - - [ ] Synchronize
