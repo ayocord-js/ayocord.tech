@@ -1,75 +1,47 @@
-# Nuxt Minimal Starter
+<div align="center">
+  <a href="https://www.ayocord.tech/">
+    <img src="https://imgur.com/mCLyhj2.png">
+  </a>
+</div>
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Introduction
 
-## Setup
+Ayocord is a discord.js typescript framework based on decorators
 
-Make sure to install dependencies:
+## Documenation
 
-```bash
-# npm
-npm install
+Check our <a href="https://www.ayocord.tech/docs/">documentation</a>
 
-# pnpm
-pnpm install
+## About documentation
 
-# yarn
-yarn install
+So, I'm beginner in WEB and in development tools for developers. Because don't wait something fantastic <br>
+There's just usefull and short information with some examples. You can contribute and add information here if you want
 
-# bun
-bun install
-```
+## Guide TODO
 
-## Development Server
+> What this guide must contain
+> Here will described features that already released and not in plans
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Overview
+- - [x] Installation guide
+- - [x] Recomendations for comfort development
+- Fundamentals
+- - [x] Modules
+- - [x] Events
+- - [x] Slash Commands
+- - [x] Text Commands
+- - [ ] Components
+- Utils
+- - [ ] Slash command utility
+- - [ ] Module utility
+- - [ ] Snowflake utility
+- - [ ] Config utility
+- - [ ] Discohook utility
+- Guard
+- - [ ] What's it
+- - [ ] Usage
+- Advanced
+- - [ ] Module management
+- - [ ] Synchronize
+- - [ ] Structure advices
+- - [ ] Db connection
