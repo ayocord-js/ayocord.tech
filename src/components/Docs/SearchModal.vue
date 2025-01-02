@@ -1,10 +1,9 @@
 <template>
-  <component
-    :is="isSmallScreen ? 'v-dialog' : 'v-overlay'"
+  <v-overlay
     v-model="searchStore.isOpen"
     close-on-back
     persistent
-    class="flex justify-center mt-[400px] sm:mt-[125px]"
+    class="flex justify-center mt-[125px]"
   >
     <v-card
       class="flex flex-col justify-center w-[300px] sm:w-[550px] mx-auto p-4"
@@ -38,18 +37,15 @@
 
       <div v-else class="text-center pb-4">No results found</div>
     </v-card>
-  </component>
+  </v-overlay>
 </template>
 
 <script lang="ts" setup>
 import { useSearchStore } from "~/store/search";
-import { useMediaQuery } from "@vueuse/core";
 
 const searchStore = useSearchStore();
 const input = ref("");
 const items = ref<ISearch[]>([]);
-const isSmallScreen = useMediaQuery("(max-width: 640px)");
-
 interface ISearch {
   id: string;
   content: string;
