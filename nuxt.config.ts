@@ -60,7 +60,13 @@ export default defineNuxtConfig({
       theme: "github-dark",
     },
     markdown: {
-      anchorLinks: false,
+      anchorLinks: true,
+    },
+    experimental: {
+      search: {
+        indexed: true
+        
+      },
     },
     sources: {
       content: {

@@ -1,6 +1,6 @@
 <template>
   <v-app-bar class="opacity-100 text-text" color="#6584FF" elevation="0">
-    <div class="flex sticky w-full items-center max-w-[90%] justify-between">
+    <div class="flex sticky w-full items-center max-w-[95%] justify-between">
       <div class="flex items-center gap-[20px]">
         <v-btn
           @click="sidebardStore.toggle"
@@ -23,7 +23,7 @@
         >
       </div>
       <div>
-        <DocsSearch />
+        <DocsSearchButton />
       </div>
     </div>
   </v-app-bar>

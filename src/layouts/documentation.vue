@@ -1,6 +1,7 @@
 <template>
   <DocsHeader class="uppercase" />
   <DocsSidebar />
+  <DocsSearchModal />
   <DocsMarkDown>
     <slot />
   </DocsMarkDown>
