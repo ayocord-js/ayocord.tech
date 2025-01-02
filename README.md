@@ -43,7 +43,8 @@ There's just usefull and short information with some examples. You can contribut
 - - [x] What's it
 - - [x] Usage
 - Advanced
-- - [ ] Module management
+- - [x] Module management
+- - [x] Custom Handlers
+- - [x] Multi Tokens
 - - [ ] Synchronize
 - - [ ] Structure advices
-- - [ ] Db connection
