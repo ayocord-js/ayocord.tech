@@ -17,13 +17,13 @@ Check our <a href="https://www.ayocord.tech/docs/">documentation</a>
 > npm
 
 ```bash
-npm i ayocord
+npm i ayocord discord.js
 ```
 
 > yarn
 
 ```bash
-yarn add ayocord
+yarn add ayocord discord.js
 ```
 
 ## Little bit history?
