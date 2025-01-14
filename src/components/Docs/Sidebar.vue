@@ -1,6 +1,6 @@
 <template>
   <ContentNavigation v-slot="{ navigation }">
-    <v-navigation-drawer v-model="sidebarStore.isOpen" color="background">
+    <v-navigation-drawer app class="fixed"  v-model="sidebarStore.isOpen" color="background">
       <v-list>
         <v-list-item link :to="Routes.docs" @click.stop>
           Introduction
